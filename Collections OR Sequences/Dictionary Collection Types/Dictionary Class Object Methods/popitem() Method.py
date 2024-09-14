@@ -1,0 +1,3 @@
+x = {"python":99, "javascript":98,"angular":97, "java":90}
+x.popitem() #---> Last Key Values are Removed....
+print(x)

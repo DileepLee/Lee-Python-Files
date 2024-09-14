@@ -1,0 +1,11 @@
+A Try Block which contains the another try Block is known as a "Enclosing Try Block" (or) "Outer Try Block".
+
+A try Block which is present inside the another try block is know as a "Nested Try Block" (or) "Inner Try Block".
+
+All this exceptions like, KeyError,ValueError,ZeroDivisonError,IndexError these all are pre-Defined Exception Object Classes.
+
+
+Ther are Tow Exception Class Objects keywords are there...
+
+1) pass Keyword ---> It's Indicate Nothing.
+2) raise Keyword 

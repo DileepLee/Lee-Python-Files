@@ -1,0 +1,61 @@
+1) * --->It matches zero or more accurance of preceding charecters.
+	
+	* ---> ab*c
+	Ac
+	abc
+	abbc
+	abbbc
+	abbbbc
+2) + --> It matches one or more accurance of preceding charecters.
+	
++ ---> ab+c
+	Ac #error
+	abc
+	abbc
+	abbbc
+	abbbbc
+3) ?--->It matches zero or one accurance of its preceding charecters.
+
+?--->ab?c
+	Ac
+	abc
+	abbc #error
+	abbbc #error
+	abbbbc #error
+
+4) . ---> It matches any single charecters.
+ 
+Ex :--->a.c
+agc
+adc
+asc
+adc
+axc
+asdc #error
+aqwc #error
+
+5)[]--->It matches any single charecters in the given list.
+
+	Ex :---> b[aeiou]d
+
+	bad
+	bed
+	bid
+	bod
+	bud
+	b8d #error
+	bpd #error
+
+6) [^]--->It matches any single charecter other than in the given list.
+
+	Ex: b[^aeiou]d
+	
+	bad #error
+	bed #error
+	bid #error
+	bod #error
+	bud #error
+	b8d 
+	bpd 
+	
+	
